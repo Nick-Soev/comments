@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comments</title>
+  <link rel="stylesheet" href="style.min.css">
+</head>
+
+<body>
+
+  <div class="_container">
+
+    <section class="commentsS">
+      <div class="commentsS__wrap"></div>
+    </section>
+
+    <!-- modal form -->
+    <section class="modalS">
+      <div class="modalS__wrap">
+        <div class="modalS__content">
+          <form id="formComment">
+            <!-- name -->
+            <div class="formComment__row">
+              <label for="name">Укажите имя :</label>
+              <input id="name" type="text" name="name" maxlength="30">
+              <span>Обязательное поле</span>
+            </div>
+            <!-- text -->
+            <div class="formComment__row">
+              <label class="_war" for="comment">Напишите ваш комментарий :</label>
+              <textarea id="comment" rows="10"></textarea>
+              <span>Обязательное поле</span>
+            </div>
+            <!-- date -->
+            <div class="formComment__row">
+              <label for="date">Укажите дату :</label>
+              <input id="date" type="date" name="date">
+            </div>
+            <!-- btn -->
+            <div class="formComment__row">
+              <button class="formComment__btn" type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- btn -->
+  <section class="openForm">
+    <button class="openForm__btn">Оставить комментарий</button>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
